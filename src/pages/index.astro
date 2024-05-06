@@ -1,0 +1,130 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="BusEase - Inicio">
+	<!-- <div class="flex items-center justify-center flex-col h-full">
+		<div class="loader"></div>
+		<p class="mt-5 text-[var(--text-color)] uppercase font-medium">Buscando Pasajes</p>
+	</div> -->
+	<div class="flex items-center justify-center h-full">
+		<div class="container mx-auto">
+			<section
+				class="grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-5"
+			>
+				<div class="bg-[var(--background-card)] shadow-md rounded-md">
+					<img
+						src="/img/actualizaciones.webp"
+						alt="Alertas de viaje"
+						class="rounded-b-none rounded-t-md"
+					/>
+					<div class="m-2">
+						<h3 class="text-[var(--text-color)] font-bold">
+							NOTIFICACIONES EN VIVO
+						</h3>
+						<p class="text-[var(--text-secondary)]">
+							Recibe notificaciones de retrasos y cambios al
+							instante para tu viaje
+						</p>
+					</div>
+				</div>
+				<div class="bg-[var(--background-card)] shadow-md rounded-md">
+					<img
+						src="/img/compra.webp"
+						alt="Compra de boletos"
+						class="rounded-b-none rounded-t-md"
+					/>
+					<div class="m-2">
+						<h3 class="text-[var(--text-color)] font-bold">
+							COMPRA INSTANTÁNEA
+						</h3>
+						<p class="text-[var(--text-secondary)]">
+							Compra boletos fácilmente desde la app, evitando
+							filas
+						</p>
+					</div>
+				</div>
+				<div class="bg-[var(--background-card)] shadow-md rounded-md">
+					<img
+						src="/img/planificacion.webp"
+						alt="Planificación de rutas"
+						class="rounded-b-none rounded-t-md"
+					/>
+					<div class="m-2">
+						<h3 class="text-[var(--text-color)] font-bold">
+							PLANEA TUS RUTAS
+						</h3>
+						<p class="text-[var(--text-secondary)]">
+							Organiza tus viajes con horarios flexibles y
+							asientos disponibles
+						</p>
+					</div>
+				</div>
+				<div class="bg-[var(--background-card)] shadow-md rounded-md">
+					<img
+						src="/img/info.webp"
+						alt="Información verificada"
+						class="rounded-b-none rounded-t-md"
+					/>
+					<div class="m-2">
+						<h3 class="text-[var(--text-color)] font-bold">
+							DATOS VERIFICADOS
+						</h3>
+						<p class="text-[var(--text-secondary)]">
+							Obtén información precisa y fiable de nuestras
+							alianzas
+						</p>
+					</div>
+				</div>
+				<div class="bg-[var(--background-card)] shadow-md rounded-md">
+					<img
+						src="/img/soporte.webp"
+						alt="Soporte al cliente"
+						class="rounded-b-none rounded-t-md"
+					/>
+					<div class="m-2">
+						<h3 class="text-[var(--text-color)] font-bold">
+							SOPORTE EFICIENTE
+						</h3>
+						<p class="text-[var(--text-secondary)]">
+							Nuestro equipo está listo para ayudarte en cualquier
+							momento
+						</p>
+					</div>
+				</div>
+				<div class="bg-[var(--background-card)] shadow-md rounded-md">
+					<img
+						src="/img/viajes.webp"
+						alt="Viajes personalizados"
+						class="rounded-b-none rounded-t-md"
+					/>
+					<div class="m-2">
+						<h3 class="text-[var(--text-color)] font-bold">
+							VIAJES A TU MEDIDA
+						</h3>
+						<p class="text-[var(--text-secondary)]">
+							Personaliza, gestiona reservas y accede a tu
+							historial de viajes fácilmente
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.loader {
+		width: 50px;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		border: 8px solid;
+		border-color: var(--text-color) #0000;
+		animation: l1 1s infinite;
+	}
+	@keyframes l1 {
+		to {
+			transform: rotate(0.5turn);
+		}
+	}
+</style>

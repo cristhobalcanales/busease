@@ -1,0 +1,128 @@
+/** INICIO CALENDARIO **/
+
+#calendar-container {
+  user-select: none;
+  width: 100%;
+  height: 270px;
+  border: 1px solid var(--sidebar-border-color);
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#calendar-controls,
+#calendar-days {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--sidebar-background);
+  padding: 5px;
+  margin: 0;
+}
+
+#calendar-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+#currentMonthYear {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background-color: var(--background-color);
+  padding: 5px;
+  /* Asegura simetría */
+  flex-grow: 1;
+}
+
+#calendar-days div {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2px;
+  color: var(--text-color);
+  font-weight: bold;
+  /* Espaciado uniforme */
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--sidebar-border-color);
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 0.9em;
+  color: var(--sidebar-text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.day.today {
+  background: var(--day-background-today);
+  color: var(--day-text-today);
+  font-weight: bold;
+}
+
+.day.selected,
+.day.in-range {
+  background: var(--day-background-today);
+  color: var(--day-text-today);
+  font-weight: bold;
+}
+
+/* Añade estilos para el interruptor de modo de viaje */
+#travel-mode-switch-container {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--sidebar-background);
+}
+
+#travel-mode-switch {
+  margin-left: 8px;
+}
+
+/* Estilo para los días bloqueados */
+.day.blocked {
+  color: var(--day-text-blocked);
+  cursor: not-allowed;
+  background-color: var(--day-background-blocked);
+}
+
+.day.holiday {
+  color: #d32f2f;
+}
+
+.button-disabled {
+  color: var(--button-disabled-text) !important;
+  cursor: not-allowed !important;
+}
+
+.note {
+  font-size: 10px;
+  /* Tamaño mínimo recomendado para legibilidad */
+  text-align: center;
+  /* Centrado horizontal */
+  font-weight: normal;
+  text-transform: none;
+  color: var(--sidebar-text-color);
+  /* Color gris oscuro para contraste pero suave */
+  margin-top: 5px;
+  /* Margen superior para separar del calendario */
+  display: none;
+  /* Ocultar inicialmente */
+}
+
+.note span {
+  color: #d32f2f;
+}
+
+/** FIN CALENDARIO **/

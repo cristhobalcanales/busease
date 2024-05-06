@@ -1,0 +1,94 @@
+<section class="seccion-switch">
+    <div class="contenedor-switch">
+      <div class="contenedor-checkbox">
+        <input type="checkbox" class="checkbox" id="cambiar-modo" />
+        <label class="switch" for="cambiar-modo">
+          <span class="deslizador"></span>
+        </label>
+      </div>
+      <p id="tipo-viaje"></p>
+    </div>
+  </section>
+
+  <style>
+section.seccion-switch div.contenedor-switch {
+  display: flex;
+  align-items: center;
+}
+
+section.seccion-switch div.contenedor-switch p {
+  margin-left: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--sidebar-text-color);
+}
+
+  section.seccion-switch
+  div.contenedor-switch
+  div.contenedor-checkbox {
+  width: 51px;
+  height: 31px;
+  position: relative;
+}
+
+  section.seccion-switch
+  div.contenedor-switch
+  div.contenedor-checkbox
+  .checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+  section.seccion-switch
+  div.contenedor-switch
+  div.contenedor-checkbox
+  .switch {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: var(--switch-bg-color);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+
+  section.seccion-switch
+  div.contenedor-switch
+  div.contenedor-checkbox
+  .switch
+  .deslizador {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: calc(50% - 27px / 2 - 10px);
+  top: calc(50% - 27px / 2);
+  border-radius: 50%;
+  background: var(--slider-color);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+
+  section.seccion-switch
+  div.contenedor-switch
+  div.contenedor-checkbox
+  .checkbox:checked
+  + .switch {
+  background-color: var(--background-switch-on);
+}
+
+
+  section.seccion-switch
+  div.contenedor-switch
+  div.contenedor-checkbox
+  .checkbox:checked
+  + .switch
+  .deslizador {
+  left: calc(50% - 27px / 2 + 10px);
+  top: calc(50% - 27px / 2);
+}
+  </style>

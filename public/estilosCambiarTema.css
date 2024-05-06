@@ -1,0 +1,124 @@
+/** ESTILOS GENERALES **/
+:root {
+  --background-color: #1e212b;
+  /* Gris azulado oscuro para un fondo suave */
+  --text-color: #e1e1e6;
+  /* Blanco ligeramente suavizado para reducir la fatiga visual */
+  --sidebar-background: #25293a;
+  /* Azul muy oscuro, consistente */
+  --sidebar-text-color: #c0c3cc;
+  /* Gris claro mejorado para más visibilidad */
+  --sidebar-border-color: #2a2d3d;
+  /* Azul grisáceo oscuro para delinear elementos */
+  --hover-background-color: #333645;
+  /* Azul grisáceo oscuro para resaltar el hover */
+  --menu-user-border-color: #262931;
+  /* Gris azulado muy oscuro, sutil */
+  --color-svg: #e0e3e8;
+  /* Gris claro para íconos SVG, más vivo */
+  --switch-bg-color: #3a4252;
+  /* Azul grisáceo más claro para el fondo del switch */
+  --slider-color: #ced4da;
+  /* Gris azulado claro para el deslizador */
+  --background-card: #2e3141;
+  /* Azul grisáceo más oscuro para tarjetas, más elegante */
+  --text-secondary: #d8dee9;
+  /* Gris claro para textos secundarios, mejora la legibilidad */
+  --background-switch-on: #8394af;
+  --day-background-today: #a8b1c7;
+  /* Fondo para el día actual: gris claro azulado */
+  --day-text-today: #2c3e50;
+  /* Texto para el día actual: azul oscuro */
+  --day-background-blocked: #3b4252;
+  /* Fondo para días bloqueados: igual al fondo principal */
+  --day-text-blocked: #8091a5;
+  /* Texto para días bloqueados: gris azulado claro */
+  --day-text-holiday: #d32f2f;
+  /* Texto para días festivos: rojo intenso */
+  --button-disabled-text: #b0bec5;
+  /* Texto para botones deshabilitados: gris azulado claro */
+  --border-color: #353a48;
+}
+
+/** ESTILOS GENERALES **/
+[data-theme="dark"] {
+  --background-color: #1e212b;
+  /* Gris azulado oscuro para un fondo suave */
+  --text-color: #e1e1e6;
+  /* Blanco ligeramente suavizado para reducir la fatiga visual */
+  --sidebar-background: #25293a;
+  /* Azul muy oscuro, consistente */
+  --sidebar-text-color: #c0c3cc;
+  /* Gris claro mejorado para más visibilidad */
+  --sidebar-border-color: #2a2d3d;
+  /* Azul grisáceo oscuro para delinear elementos */
+  --hover-background-color: #333645;
+  /* Azul grisáceo oscuro para resaltar el hover */
+  --menu-user-border-color: #262931;
+  /* Gris azulado muy oscuro, sutil */
+  --color-svg: #e0e3e8;
+  /* Gris claro para íconos SVG, más vivo */
+  --switch-bg-color: #3a4252;
+  /* Azul grisáceo más claro para el fondo del switch */
+  --slider-color: #ced4da;
+  /* Gris azulado claro para el deslizador */
+  --background-card: #2e3141;
+  /* Azul grisáceo más oscuro para tarjetas, más elegante */
+  --text-secondary: #d8dee9;
+  /* Gris claro para textos secundarios, mejora la legibilidad */
+  --background-switch-on: #8394af;
+  --day-background-today: #a8b1c7;
+  /* Fondo para el día actual: gris claro azulado */
+  --day-text-today: #2c3e50;
+  /* Texto para el día actual: azul oscuro */
+  --day-background-blocked: #3b4252;
+  /* Fondo para días bloqueados: igual al fondo principal */
+  --day-text-blocked: #8091a5;
+  /* Texto para días bloqueados: gris azulado claro */
+  --day-text-holiday: #d32f2f;
+  /* Texto para días festivos: rojo intenso */
+  --button-disabled-text: #b0bec5;
+  /* Texto para botones deshabilitados: gris azulado claro */
+  --border-color: #353a48;
+}
+
+[data-theme="light"] {
+  --background-color: #f0f1f5;
+  /* Gris azulado claro para un fondo suave */
+  --text-color: #1e212b;
+  /* Gris azulado oscuro para el texto, proporciona buen contraste */
+  --sidebar-background: #e2e4ea;
+  /* Gris azulado muy claro, consistente */
+  --sidebar-text-color: #2a2d3d;
+  /* Azul grisáceo oscuro para el texto, mejor contraste */
+  --sidebar-border-color: #cdd3e0;
+  /* Gris azulado claro para delinear elementos */
+  --hover-background-color: #d3d6de;
+  /* Gris azulado claro para resaltar el hover */
+  --menu-user-border-color: #e0e3ea;
+  /* Gris azulado muy claro, sutil */
+  --color-svg: #2a2d3d;
+  /* Azul grisáceo oscuro para íconos SVG, más visible */
+  --switch-bg-color: #ccd1da;
+  /* Azul grisáceo muy claro para el fondo del switch */
+  --slider-color: #bac2cd;
+  /* Gris azulado medio para el deslizador */
+  --background-card: #dfe2e8;
+  /* Gris azulado claro para tarjetas, más elegante */
+  --text-secondary: #3a3f4b;
+  /* Gris azulado oscuro para textos secundarios, mejora la legibilidad */
+  --background-switch-on: #e6e9ef;
+  --day-background-today: #cad2dc;
+  /* Fondo para el día actual: gris claro azulado */
+  --day-text-today: #2c3e50;
+  /* Texto para el día actual: azul oscuro */
+  --day-background-blocked: #dbe0e8;
+  /* Fondo para días bloqueados: gris azulado medio, más distinguible */
+  --day-text-blocked: #3a4252;
+  /* Texto para días bloqueados: gris azulado oscuro */
+  --day-text-holiday: #f44336;
+  /* Texto para días festivos: rojo brillante */
+  --button-disabled-text: #d0d9e1;
+  /* Texto para botones deshabilitados: gris azulado muy claro */
+  --border-color: #e0e3ea;
+}
